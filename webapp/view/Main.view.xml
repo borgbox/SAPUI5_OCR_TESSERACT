@@ -1,0 +1,25 @@
+<mvc:View controllerName="com.infineon.ZBC_OCR_TESSERACT.controller.Main" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="OCR Scan">
+					<content>
+						<VBox>
+							<Panel headerText="">
+								<FlexBox height="600px" direction="Column"  alignItems="Center" justifyContent="Center">
+									<HBox alignContent='Center' justifyContent='Center'>
+										<Button text='Scan' press='onRecognition' class="sapUiSmallMarginEnd"></Button>
+									</HBox>
+									<HBox alignContent='Center' justifyContent='Center'>
+									<TextArea width='400px' height='400px' value='{viewData>/log}'></TextArea>
+									<Image  width='400px' height='400px' src="{viewData>/snap}"/>
+									</HBox>
+								</FlexBox>
+							</Panel>
+						</VBox>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
